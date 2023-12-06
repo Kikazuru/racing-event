@@ -1,5 +1,5 @@
 <template>
-  <v-card :to="{}">
+  <v-card :to="{ name: 'detail', params: { id: props.id } }">
     <v-img
       src="https://dyuarqvpljnfesefojys.supabase.co/storage/v1/object/public/baim/UGMTR%202023%20-%20BANNER%20PENDAFTARAN%20(1).jpg"
       cover
@@ -36,6 +36,10 @@
 
 <script setup lang="ts">
 import { mdiCalendarBlank, mdiMapMarker } from '@mdi/js'
+
+const props = defineProps<{
+  id: string
+}>()
 </script>
 
 <style scoped></style>
