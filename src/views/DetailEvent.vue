@@ -2,6 +2,11 @@
   <v-container>
     <v-row>
       <v-col>
+        <v-btn variant="outlined" @click="router.go(-1)"> Kembali </v-btn>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
         <div class="text-h5 font-weight-bold">Title</div>
         <div class="d-flex mt-2">
           <v-icon class="me-1">{{ mdiCalendarBlank }}</v-icon>
@@ -57,9 +62,10 @@
 
 <script setup lang="ts">
 import { mdiCalendarBlank, mdiCircleSmall, mdiMapMarker } from '@mdi/js'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 
 const route = useRoute()
+const router = useRouter()
 
 const id = route.params.id
 
