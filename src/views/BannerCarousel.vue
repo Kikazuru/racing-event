@@ -7,16 +7,13 @@
 <script setup lang="ts">
 const items = [
   {
-    src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+    src: 'https://dyuarqvpljnfesefojys.supabase.co/storage/v1/object/public/baim/UGMTR%202023%20-%20BANNER%20PENDAFTARAN%20(1).jpg'
   },
   {
-    src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+    src: 'https://dyuarqvpljnfesefojys.supabase.co/storage/v1/object/public/baim/STR%202023.jpg'
   },
   {
-    src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
-  },
-  {
-    src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+    src: 'https://dyuarqvpljnfesefojys.supabase.co/storage/v1/object/public/baim/Banner%201.jpg'
   }
 ]
 </script>
