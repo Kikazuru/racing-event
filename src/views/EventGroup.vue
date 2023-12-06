@@ -2,7 +2,7 @@
   <v-row>
     <template v-for="n in 15" :key="n">
       <v-col cols="12" :xxl="3" :xl="3" :lg="3" :md="4" :sm="4">
-        <event-card></event-card>
+        <event-card :id="n.toString()"></event-card>
       </v-col>
     </template>
     <v-responsive width="100%"></v-responsive>
