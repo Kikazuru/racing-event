@@ -1,5 +1,10 @@
 <template>
-  <v-container fluid>
+  <v-container>
+    <v-row>
+      <v-col>
+        <banner-carousel></banner-carousel>
+      </v-col>
+    </v-row>
     <v-row>
       <v-col>
         <v-card>
@@ -12,6 +17,8 @@
   </v-container>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import BannerCarousel from './BannerCarousel.vue'
+</script>
 
 <style scoped></style>
