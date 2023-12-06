@@ -7,25 +7,20 @@
     </v-row>
     <v-row>
       <v-col>
-        <div class="text-h5 font-weight-bold">Title</div>
+        <div class="text-h5 font-weight-bold">{{ event?.name }}</div>
         <div class="d-flex mt-2">
           <v-icon class="me-1">{{ mdiCalendarBlank }}</v-icon>
-          <div>2 January 2024</div>
+          <div>{{ event?.date }}</div>
           <v-icon>{{ mdiCircleSmall }}</v-icon>
           <v-icon class="me-1">{{ mdiMapMarker }}</v-icon>
-          <div>Yogyakarta</div>
+          <div>{{ event?.location }}</div>
         </div>
       </v-col>
     </v-row>
 
     <v-row>
       <v-col>
-        <v-img
-          src="https://dyuarqvpljnfesefojys.supabase.co/storage/v1/object/public/baim/UGMTR%202023%20-%20BANNER%20PENDAFTARAN%20(1).jpg"
-          cover
-          class="rounded-lg"
-        >
-        </v-img>
+        <v-img :src="event?.imageUrl" cover class="rounded-lg"> </v-img>
       </v-col>
     </v-row>
 
@@ -63,13 +58,14 @@
 <script setup lang="ts">
 import { mdiCalendarBlank, mdiCircleSmall, mdiMapMarker } from '@mdi/js'
 import { useRoute, useRouter } from 'vue-router'
+import { detailEvent } from '@/dummy/event'
 
 const route = useRoute()
 const router = useRouter()
 
-const id = route.params.id
+const id = route.params.id as string
 
-console.log(id)
+const event = detailEvent(id)
 </script>
 
 <style scoped></style>
