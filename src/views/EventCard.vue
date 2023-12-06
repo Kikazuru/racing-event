@@ -1,6 +1,10 @@
 <template>
   <v-card :to="{}">
-    <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px" cover> </v-img>
+    <v-img
+      src="https://dyuarqvpljnfesefojys.supabase.co/storage/v1/object/public/baim/UGMTR%202023%20-%20BANNER%20PENDAFTARAN%20(1).jpg"
+      cover
+    >
+    </v-img>
 
     <v-card-item>
       <v-card-title> Title </v-card-title>
