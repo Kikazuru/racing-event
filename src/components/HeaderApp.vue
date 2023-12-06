@@ -1,6 +1,6 @@
 <template>
-  <v-app-bar flat>
-    <div class="w-100 d-flex justify-center">
+  <v-app-bar density="compact" flat>
+    <div class="w-100 align-center d-flex justify-center">
       <div>LOGO</div>
     </div>
   </v-app-bar>
