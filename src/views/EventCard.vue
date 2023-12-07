@@ -1,5 +1,5 @@
 <template>
-  <v-card :to="{ name: 'detail', params: { id: props.event.id } }">
+  <v-card height="100%" :to="{ name: 'detail', params: { id: props.event.id } }">
     <v-img :src="props.event.imageUrl" cover> </v-img>
 
     <v-card-item>
@@ -25,7 +25,7 @@
         <div class="text-caption">Mulai dari</div>
       </div>
 
-      <div class="text-h6 font-weight-medium">Rp {{ props.event.price }}</div>
+      <div class="text-h6 font-weight-medium">{{ numberToRupiah(props.event.price) }}</div>
     </v-card-text>
   </v-card>
 </template>
@@ -33,6 +33,7 @@
 <script setup lang="ts">
 import { mdiCalendarBlank, mdiMapMarker } from '@mdi/js'
 import type { Event } from '@/dummy/event'
+import { numberToRupiah } from '@/utils/formatter'
 
 const props = defineProps<{
   event: Event
