@@ -19,12 +19,10 @@
     </v-row>
 
     <v-row>
-      <v-col>
+      <v-col cols="6">
         <v-img :src="event?.imageUrl" cover class="rounded-lg"> </v-img>
       </v-col>
-    </v-row>
 
-    <v-row>
       <v-col>
         <div class="text-h6 font-weight-bold">Deskripsi</div>
         <div>
