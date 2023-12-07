@@ -47,7 +47,7 @@
           id="iframe-widget-etix"
           width="100%"
           scrolling="no"
-          src="http://etix-widget-dev.s3-website.ap-southeast-3.amazonaws.com/?color=2C3C3C&lan=id&product=ctc-ultra-2024&store=Sample Store 4"
+          :src="url"
           frameborder="0"
         ></iframe>
       </v-col>
@@ -66,6 +66,7 @@ const router = useRouter()
 const id = route.params.id as string
 
 const event = detailEvent(id)
+const url = `http://etix-widget-dev.s3-website.ap-southeast-3.amazonaws.com/?color=2C3C3C&lan=id&product=${id}&store=Sample Store 4`
 </script>
 
 <style scoped></style>
